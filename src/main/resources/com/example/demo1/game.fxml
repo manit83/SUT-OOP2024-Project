@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.GameController">
+   <children>
+      <ImageView fitHeight="804.0" fitWidth="1326.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../background1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="733.0" fitWidth="1230.0" layoutX="27.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../timeline.png" />
+         </image>
+      </ImageView>
+      <HBox fx:id="oppTimeline" layoutX="68.0" layoutY="282.0" prefHeight="106.0" prefWidth="1145.0" spacing="7.0">
+         <children>
+            <ImageView fx:id="block11" fitHeight="107.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="block12" fitHeight="107.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="block13" fitHeight="107.0" fitWidth="50.0" layoutX="60.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="block14" fitHeight="107.0" fitWidth="50.0" layoutX="111.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="block15" fitHeight="107.0" fitWidth="50.0" layoutX="185.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="block16" fitHeight="107.0" fitWidth="50.0" layoutX="244.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="block17" fitHeight="107.0" fitWidth="50.0" layoutX="302.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="block18" fitHeight="107.0" fitWidth="50.0" layoutX="360.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="block19" fitHeight="107.0" fitWidth="50.0" layoutX="419.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="block110" fitHeight="107.0" fitWidth="50.0" layoutX="477.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="block111" fitHeight="107.0" fitWidth="50.0" layoutX="536.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="block112" fitHeight="107.0" fitWidth="50.0" layoutX="594.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="block113" fitHeight="107.0" fitWidth="50.0" layoutX="652.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="block114" fitHeight="107.0" fitWidth="50.0" layoutX="711.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="block115" fitHeight="107.0" fitWidth="50.0" layoutX="769.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="block116" fitHeight="107.0" fitWidth="50.0" layoutX="828.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="block117" fitHeight="107.0" fitWidth="50.0" layoutX="886.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="block118" fitHeight="107.0" fitWidth="50.0" layoutX="944.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="block119" fitHeight="107.0" fitWidth="50.0" layoutX="1003.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="block120" fitHeight="107.0" fitWidth="50.0" layoutX="1061.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+         <padding>
+            <Insets top="2.0" />
+         </padding>
+      </HBox>
+      <HBox fx:id="hostTimeline" layoutX="69.0" layoutY="397.0" prefHeight="106.0" prefWidth="1145.0" spacing="7.0">
+         <children>
+            <ImageView fx:id="block21" fitHeight="107.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="block22" fitHeight="107.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="block23" fitHeight="107.0" fitWidth="50.0" layoutX="60.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="block24" fitHeight="107.0" fitWidth="50.0" layoutX="111.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="block25" fitHeight="107.0" fitWidth="50.0" layoutX="185.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="block26" fitHeight="107.0" fitWidth="50.0" layoutX="244.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="block27" fitHeight="107.0" fitWidth="50.0" layoutX="302.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="block28" fitHeight="107.0" fitWidth="50.0" layoutX="360.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="block29" fitHeight="107.0" fitWidth="50.0" layoutX="419.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="block210" fitHeight="107.0" fitWidth="50.0" layoutX="477.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="block211" fitHeight="107.0" fitWidth="50.0" layoutX="536.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="block212" fitHeight="107.0" fitWidth="50.0" layoutX="594.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="block213" fitHeight="107.0" fitWidth="50.0" layoutX="652.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="block214" fitHeight="107.0" fitWidth="50.0" layoutX="711.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="block215" fitHeight="107.0" fitWidth="50.0" layoutX="769.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="block216" fitHeight="107.0" fitWidth="50.0" layoutX="828.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="block217" fitHeight="107.0" fitWidth="50.0" layoutX="886.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="block218" fitHeight="107.0" fitWidth="50.0" layoutX="944.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="block219" fitHeight="107.0" fitWidth="50.0" layoutX="1003.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="block220" fitHeight="107.0" fitWidth="50.0" layoutX="1061.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+         <padding>
+            <Insets top="2.0" />
+         </padding>
+      </HBox>
+      <ImageView fx:id="hostCard1" fitHeight="188.0" fitWidth="130.0" layoutX="405.0" layoutY="579.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../cardDemo.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="hostCard2" fitHeight="188.0" fitWidth="130.0" layoutX="557.0" layoutY="579.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../cardDemo.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="hostCard3" fitHeight="188.0" fitWidth="130.0" layoutX="710.0" layoutY="580.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../cardDemo.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="hostCard4" fitHeight="188.0" fitWidth="130.0" layoutX="864.0" layoutY="581.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../cardDemo.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="hostCard5" fitHeight="188.0" fitWidth="130.0" layoutX="1016.0" layoutY="581.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../cardDemo.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="oppCard5" fitHeight="188.0" fitWidth="130.0" layoutX="111.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../cardDemo.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="oppCard4" fitHeight="188.0" fitWidth="130.0" layoutX="263.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../cardDemo.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="oppCard3" fitHeight="188.0" fitWidth="130.0" layoutX="416.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../cardDemo.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="oppCard2" fitHeight="188.0" fitWidth="130.0" layoutX="570.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../cardDemo.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="oppCard1" fitHeight="188.0" fitWidth="130.0" layoutX="722.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../cardDemo.png" />
+         </image>
+      </ImageView>
+      <Rectangle fx:id="tracker" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="221.0" layoutY="99.0" opacity="0.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="54.0" />
+      <Line fx:id="timeline" endX="1125.199951171875" endY="-1.4000244140625" layoutX="90.0" layoutY="391.0" startX="27.999984741210938" startY="-5.98272705078125" strokeWidth="0.0" />
+      <Label fx:id="gameHostNickname" layoutX="146.0" layoutY="695.0" prefHeight="31.0" prefWidth="164.0" text="Label" textFill="WHITE">
+         <font>
+            <Font name="ROGFonts-Regular" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="gameHostHealth" layoutX="177.0" layoutY="718.0" prefHeight="31.0" prefWidth="164.0" text="Label" textFill="WHITE">
+         <font>
+            <Font name="ROGFonts-Regular" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="gameHostTurn" layoutX="28.0" layoutY="569.0" prefHeight="55.0" prefWidth="211.0" text="turn : " textFill="WHITE">
+         <font>
+            <Font name="ROGFonts-Regular" size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="gameHostDamage" layoutX="27.0" layoutY="610.0" prefHeight="55.0" prefWidth="306.0" text="dmg : " textFill="WHITE">
+         <font>
+            <Font name="ROGFonts-Regular" size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="gameOppNickname" alignment="CENTER_RIGHT" layoutX="971.0" layoutY="54.0" prefHeight="31.0" prefWidth="164.0" text="Label" textFill="WHITE">
+         <font>
+            <Font name="ROGFonts-Regular" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="gameOppHealth" alignment="CENTER_RIGHT" layoutX="949.0" layoutY="76.0" prefHeight="31.0" prefWidth="164.0" text="Label" textFill="WHITE">
+         <font>
+            <Font name="ROGFonts-Regular" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="gameOppTurn" alignment="CENTER_RIGHT" layoutX="1034.0" layoutY="125.0" prefHeight="55.0" prefWidth="211.0" text="turn : " textFill="WHITE">
+         <font>
+            <Font name="ROGFonts-Regular" size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="gameOppDamage" alignment="CENTER_RIGHT" layoutX="893.0" layoutY="170.0" prefHeight="55.0" prefWidth="352.0" text="dmg : " textFill="WHITE">
+         <font>
+            <Font name="ROGFonts-Regular" size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="label11" layoutX="78.0" layoutY="314.0" prefHeight="49.0" prefWidth="33.0">
+         <font>
+            <Font name="ROGFonts-Regular" size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="label12" layoutX="136.0" layoutY="314.0" prefHeight="49.0" prefWidth="33.0">
+         <font>
+            <Font name="ROGFonts-Regular" size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="label13" layoutX="194.0" layoutY="314.0" prefHeight="49.0" prefWidth="33.0">
+         <font>
+            <Font name="ROGFonts-Regular" size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="label14" layoutX="252.0" layoutY="314.0" prefHeight="49.0" prefWidth="33.0">
+         <font>
+            <Font name="ROGFonts-Regular" size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="label15" layoutX="309.0" layoutY="313.0" prefHeight="49.0" prefWidth="33.0">
+         <font>
+            <Font name="ROGFonts-Regular" size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="label16" layoutX="367.0" layoutY="313.0" prefHeight="49.0" prefWidth="33.0">
+         <font>
+            <Font name="ROGFonts-Regular" size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="label17" layoutX="424.0" layoutY="313.0" prefHeight="49.0" prefWidth="33.0">
+         <font>
+            <Font name="ROGFonts-Regular" size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="label18" layoutX="482.0" layoutY="313.0" prefHeight="49.0" prefWidth="33.0">
+         <font>
+            <Font name="ROGFonts-Regular" size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="label19" layoutX="540.0" layoutY="313.0" prefHeight="49.0" prefWidth="33.0">
+         <font>
+            <Font name="ROGFonts-Regular" size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="label110" layoutX="597.0" layoutY="313.0" prefHeight="49.0" prefWidth="33.0">
+         <font>
+            <Font name="ROGFonts-Regular" size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="label111" layoutX="655.0" layoutY="314.0" prefHeight="49.0" prefWidth="33.0">
+         <font>
+            <Font name="ROGFonts-Regular" size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="label112" layoutX="713.0" layoutY="314.0" prefHeight="49.0" prefWidth="33.0">
+         <font>
+            <Font name="ROGFonts-Regular" size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="label113" layoutX="770.0" layoutY="314.0" prefHeight="49.0" prefWidth="33.0">
+         <font>
+            <Font name="ROGFonts-Regular" size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="label114" layoutX="828.0" layoutY="314.0" prefHeight="49.0" prefWidth="33.0">
+         <font>
+            <Font name="ROGFonts-Regular" size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="label115" layoutX="885.0" layoutY="314.0" prefHeight="49.0" prefWidth="33.0">
+         <font>
+            <Font name="ROGFonts-Regular" size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="label116" layoutX="943.0" layoutY="313.0" prefHeight="49.0" prefWidth="33.0">
+         <font>
+            <Font name="ROGFonts-Regular" size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="label117" layoutX="1001.0" layoutY="314.0" prefHeight="49.0" prefWidth="33.0">
+         <font>
+            <Font name="ROGFonts-Regular" size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="label118" layoutX="1058.0" layoutY="314.0" prefHeight="49.0" prefWidth="33.0">
+         <font>
+            <Font name="ROGFonts-Regular" size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="label119" layoutX="1116.0" layoutY="315.0" prefHeight="49.0" prefWidth="33.0">
+         <font>
+            <Font name="ROGFonts-Regular" size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="label120" layoutX="1173.0" layoutY="315.0" prefHeight="49.0" prefWidth="33.0">
+         <font>
+            <Font name="ROGFonts-Regular" size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="label21" layoutX="79.0" layoutY="429.0" prefHeight="49.0" prefWidth="33.0">
+         <font>
+            <Font name="ROGFonts-Regular" size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="label22" layoutX="137.0" layoutY="429.0" prefHeight="49.0" prefWidth="33.0">
+         <font>
+            <Font name="ROGFonts-Regular" size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="label23" layoutX="195.0" layoutY="429.0" prefHeight="49.0" prefWidth="33.0">
+         <font>
+            <Font name="ROGFonts-Regular" size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="label24" layoutX="253.0" layoutY="429.0" prefHeight="49.0" prefWidth="33.0">
+         <font>
+            <Font name="ROGFonts-Regular" size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="label25" layoutX="310.0" layoutY="428.0" prefHeight="49.0" prefWidth="33.0">
+         <font>
+            <Font name="ROGFonts-Regular" size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="label26" layoutX="368.0" layoutY="428.0" prefHeight="49.0" prefWidth="33.0">
+         <font>
+            <Font name="ROGFonts-Regular" size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="label27" layoutX="425.0" layoutY="428.0" prefHeight="49.0" prefWidth="33.0">
+         <font>
+            <Font name="ROGFonts-Regular" size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="label28" layoutX="483.0" layoutY="428.0" prefHeight="49.0" prefWidth="33.0">
+         <font>
+            <Font name="ROGFonts-Regular" size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="label29" layoutX="541.0" layoutY="428.0" prefHeight="49.0" prefWidth="33.0">
+         <font>
+            <Font name="ROGFonts-Regular" size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="label210" layoutX="598.0" layoutY="428.0" prefHeight="49.0" prefWidth="33.0">
+         <font>
+            <Font name="ROGFonts-Regular" size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="label211" layoutX="656.0" layoutY="429.0" prefHeight="49.0" prefWidth="33.0">
+         <font>
+            <Font name="ROGFonts-Regular" size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="label212" layoutX="714.0" layoutY="429.0" prefHeight="49.0" prefWidth="33.0">
+         <font>
+            <Font name="ROGFonts-Regular" size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="label213" layoutX="771.0" layoutY="429.0" prefHeight="49.0" prefWidth="33.0">
+         <font>
+            <Font name="ROGFonts-Regular" size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="label214" layoutX="829.0" layoutY="429.0" prefHeight="49.0" prefWidth="33.0">
+         <font>
+            <Font name="ROGFonts-Regular" size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="label215" layoutX="886.0" layoutY="429.0" prefHeight="49.0" prefWidth="33.0">
+         <font>
+            <Font name="ROGFonts-Regular" size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="label216" layoutX="944.0" layoutY="428.0" prefHeight="49.0" prefWidth="33.0">
+         <font>
+            <Font name="ROGFonts-Regular" size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="label217" layoutX="1002.0" layoutY="429.0" prefHeight="49.0" prefWidth="33.0">
+         <font>
+            <Font name="ROGFonts-Regular" size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="label218" layoutX="1059.0" layoutY="429.0" prefHeight="49.0" prefWidth="33.0">
+         <font>
+            <Font name="ROGFonts-Regular" size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="label219" layoutX="1117.0" layoutY="430.0" prefHeight="49.0" prefWidth="33.0">
+         <font>
+            <Font name="ROGFonts-Regular" size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="label220" layoutX="1174.0" layoutY="430.0" prefHeight="49.0" prefWidth="33.0">
+         <font>
+            <Font name="ROGFonts-Regular" size="32.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="winOrLoseWindow" fitHeight="809.0" fitWidth="631.0" layoutX="340.0" layoutY="-1.0" mouseTransparent="true" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../winLoser.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="winOrLoseButton" layoutX="542.0" layoutY="667.0" mnemonicParsing="false" mouseTransparent="true" onAction="#goToMainMenu" opacity="0.0" prefHeight="55.0" prefWidth="234.0" text="Button" />
+      <Label fx:id="winOrLose" alignment="CENTER" layoutX="373.0" layoutY="137.0" mouseTransparent="true" prefHeight="58.0" prefWidth="558.0" textFill="WHITE">
+         <font>
+            <Font name="ROGFonts-Regular" size="49.0" />
+         </font>
+      </Label>
+      <Label fx:id="winOrLoseXp" alignment="CENTER" layoutX="375.0" layoutY="247.0" mouseTransparent="true" prefHeight="58.0" prefWidth="558.0" textFill="WHITE">
+         <font>
+            <Font name="ROGFonts-Regular" size="27.0" />
+         </font>
+      </Label>
+      <Label fx:id="winOrLoseLvl" alignment="CENTER" layoutX="375.0" layoutY="300.0" mouseTransparent="true" prefHeight="58.0" prefWidth="558.0" textFill="WHITE">
+         <font>
+            <Font name="ROGFonts-Regular" size="27.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

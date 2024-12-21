@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.SignInController">
+   <children>
+      <ImageView fitHeight="679.0" fitWidth="478.0" layoutX="-43.0" layoutY="-12.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../background3.gif" />
+         </image>
+         <effect>
+            <GaussianBlur />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="526.0" fitWidth="376.0" layoutX="53.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../signupMenu.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="signInUsername" layoutX="86.0" layoutY="154.0" prefHeight="27.0" prefWidth="228.0" />
+      <TextField fx:id="signInNickname" layoutX="86.0" layoutY="221.0" prefHeight="27.0" prefWidth="228.0" />
+      <TextField fx:id="signInEmail" layoutX="86.0" layoutY="288.0" prefHeight="27.0" prefWidth="228.0" />
+      <TextField fx:id="signInPasswordConfirm" layoutX="86.0" layoutY="425.0" prefHeight="27.0" prefWidth="228.0" />
+      <TextField fx:id="signInPassword" layoutX="86.0" layoutY="355.0" prefHeight="27.0" prefWidth="199.0" />
+      <Button layoutX="204.0" layoutY="531.0" mnemonicParsing="false" onAction="#goToSecurityQ" opacity="0.0" prefHeight="56.0" prefWidth="132.0" text="Button" />
+      <Button layoutX="56.0" layoutY="532.0" mnemonicParsing="false" onAction="#cancelCreateAcc" opacity="0.0" prefHeight="56.0" prefWidth="132.0" text="Button" />
+      <Button layoutX="285.0" layoutY="356.0" mnemonicParsing="false" onAction="#randomPass" opacity="0.0" prefHeight="26.0" prefWidth="29.0" text="Button" />
+      <Label fx:id="signInError" layoutX="57.0" layoutY="476.0" prefHeight="38.0" prefWidth="279.0" textAlignment="CENTER" textFill="#f23030">
+         <font>
+            <Font name="ROGFonts-Regular" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
